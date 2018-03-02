@@ -1,9 +1,86 @@
-@media (min-width:576px) {
+@media screen and (min-width:576px) {
     .slider_move {
         display: block;
     }
 
     .slider {
         overflow-x: hidden;
+    }
+
+    .expertQuest br {
+        display: none;
+    }
+
+    .expertQuest {
+        margin-bottom: 10px;
+    }
+
+    .allDoc {
+        margin-top: -14px;
+    }
+
+    .infoAboutDoctor {
+        display: inline-block;
+        vertical-align: sub;
+    }
+
+    .doctorOfScience {
+        display: inline-block;
+        text-align: left;
+        vertical-align: super;
+        margin-right: 15px;
+    }
+
+    .nameOfDoctor,
+    .levelOfScience,
+    .questionForDoctor {
+        text-align: left;
+    }
+
+    .questionForDoctor {
+        margin-top: 20px;
+    }
+
+    .publicBlock {
+        display: none;
+    }
+
+    .aboutPortal {
+        text-align: left;
+    }
+
+    .forPortal {
+        padding: 10px 0px;
+    }
+
+    .allRights {
+        display: none;
+    }
+
+    .seventhSect {
+        padding-top: 60px;
+    }
+
+    .seventhSect .our_desc {
+        display: block;
+    }
+
+    .footer_nav,
+    .footer_right {
+        display: block;
+    }
+
+    .seventhSect .title {
+        text-align: left;
+    }
+
+    .socials .rules {
+        display: block;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .privateBlock {
+        display: none;
     }
 }
