@@ -1,13 +1,18 @@
-@media screen and (min-width:576px) {
+@media screen and (min-width:768px) {
     .slider_move {
         display: block;
+    }
+
+    .slider_wr {
+        width: calc(100% - 80px);
     }
 
     .slider {
         overflow-x: hidden;
     }
 
-    .expertQuest br {
+    .expertQuest br,
+    .popularArticles br {
         display: none;
     }
 
@@ -77,9 +82,73 @@
     .socials .rules {
         display: block;
     }
+
+    .header_place {
+        display: inline-block;
+    }
+
+    .rowWrapp {
+        background-color: #003366;
+    }
+
+    .main_navbar {
+        line-height: 86px;
+    }
+
+    .navbar-list {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    .main_navbar .list-link {
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+        transition: all 0.7s ease;
+    }
+
+    .main_navbar .list-link:hover {
+        color: #48cdff;
+        transition: all 0.7s ease;
+    }
+
+    .article {
+        margin: 24px auto 20px;
+    }
+
+    .firstAid {
+        width: 150px;
+        height: 35px;
+        border: 1px solid white;
+        margin-top: 29px;
+        background-color: #003366;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .plus {
+        position: absolute;
+        top: 42px;
+        left: 11px;
+    }
+
+    .firstAid:hover {
+        background-color: #48cdff;
+        transition: all 0.7s ease;
+    }
+
+    .search {
+        width: 25px;
+        height: auto;
+        margin: 35px 0 0 43px;
+    }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:768px) {
     .privateBlock {
         display: none;
     }

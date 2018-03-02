@@ -90,10 +90,11 @@ body {
 .navbar-list {
     display: none;
     text-align: center;
-    clear: right;
-    position: absolute;
-    right: 50px;
-    bottom: 0px;
+}
+
+.navbar-list .navbar-item {
+    border-top: 1px solid rgba(255,255,255,0.27);
+    padding-left: 10px;
 }
 
 .navbar-list .list-link {
@@ -104,15 +105,17 @@ body {
 }
 
 #burger:checked + .burger + .navbar-list{
-    /*display: block;*/
-    /*list-style-type: none;*/
-    /*text-align: right;*/
-    /*margin: -120px 40px;*/
-    display: flex;
+    display: block;
     list-style-type: none;
     text-align: left;
-    margin: 8px -540px;
-    background-color: black;
+    background-color: #061320;
+    position: absolute;
+    top: 73px;
+    z-index: 2;
+    line-height: 50px;
+    padding: 0;
+    left: 0;
+    width: 300px;
 }
 
 .navigationMenu{
@@ -232,6 +235,7 @@ body {
 
 .slides {
     float: left;
+    width: 99999px;
 }
 
 .slider_move {
@@ -364,10 +368,12 @@ body {
     width: 200px;
     /* padding-top: 10px; */
     vertical-align: middle;
+    text-align: left;
 }
 
 .hoverToQuest {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .hoverToQuest:hover .circle{
@@ -464,7 +470,7 @@ body {
 }
 
 .circleNext {
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     width: 24px;
     height: 24px;
@@ -481,16 +487,11 @@ body {
 }
 
 .standartQuestNext {
-    display: flex;
     justify-content: space-around;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
     color: #6d7a8c;
-    margin: 7px 10px;
-}
-
-.hoverToQuestNext {
-    display: flex;
+    margin: 7px 0;
 }
 
 .hoverToQuestNext:hover .circleNext{
@@ -616,6 +617,7 @@ body {
 .listStyle {
     list-style-image: url("../img/right-chevron.svg");
     fill: #daf5ff;
+    line-height: 32px;
 }
 
 .itemLink {
@@ -655,6 +657,11 @@ body {
     padding: 10px 25px 25px;
 }
 
+.moreInfoNext,
+.moreInfoComments {
+    height: 430px;
+}
+
 /*Block on Svetolina*/
 
 .notesIlona {
@@ -672,6 +679,7 @@ body {
 
 .linksOnSvetolina {
     margin-bottom: 10px;
+    line-height: 17px;
 }
 
 .linksOnSvetolina:hover .notesIlona{
@@ -841,6 +849,10 @@ body {
 
 .nopadding {
     padding: 0;
+}
+
+.nomargin {
+    margin: 0;
 }
 
 .footer_nav .itemLink .listStyle {
