@@ -1,0 +1,790 @@
+@font-face {
+    font-family: 'Proxima Nova - Black';
+    src: url('../fonts/ProximaNova-Black.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova - Reg';
+    src: url('../fonts/ProximaNova-Reg.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova - Bold';
+    src: url('../fonts/ProximaNova-Bold.otf');
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+/*Header*/
+
+.header {
+    background-color: #003366;
+}
+
+.title {
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.article {
+    display: inline-block;
+    color: white;
+    font-family: "Proxima Nova - Black", Arial, sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin: 15px auto 20px;
+}
+
+.medportal {
+    display: inline-block;
+    color: white;
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+/*Next header part*/
+
+.questionName {
+    text-align: center;
+}
+
+/*Burger Menu*/
+
+.navbar {
+    margin-top: 14px;
+    float: right;
+}
+
+.navbar:after {
+    display: block;
+    content: '';
+    clear: right;
+}
+
+#burger {
+    display: none;
+}
+
+.burger {
+    width: 30px;
+    display: block;
+    float: right;
+    position: relative;
+    top: 5px;
+    right: 0;
+}
+
+.burger-line {
+    border-top: 3px solid white;
+    display: block;
+    margin-top: 6px;
+}
+
+.navbar-list {
+    display: none;
+    text-align: center;
+    clear: right;
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+}
+
+.navbar-list .list-link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+#burger:checked + .burger + .navbar-list{
+    /*display: block;*/
+    /*list-style-type: none;*/
+    /*text-align: right;*/
+    /*margin: -120px 40px;*/
+    display: flex;
+    list-style-type: none;
+    text-align: left;
+    margin: 8px -540px;
+    background-color: black;
+}
+
+.navigationMenu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.rowWrapp {
+    background-color: #002b55;
+}
+
+.questionButton {
+    width: 145px;
+    background-color: #0059b2;
+    border-style: none;
+    border-radius: 3px;
+    margin: 20px auto;
+    transition: all 0.8s ease;
+}
+
+.questionButton:hover {
+    background-color: #48cdff;
+    transition: all 0.8s ease;
+}
+
+.question {
+    display: inline-block;
+    fill: white;
+    text-align: center;
+    width: 18px;
+}
+
+.docQuest {
+    display: inline-block;
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px 0;
+    padding: 17px 5px 6px;
+    letter-spacing: 1px;
+}
+
+.search {
+    width: 34px;
+    height: auto;
+    margin: 27px 0 0 10px;
+    fill: white;
+}
+
+/*First section*/
+
+.popularArticles {
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    font-size: 24px;
+    color: #130947;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.line {
+    margin: 17px auto 30px;
+    width: 50px;
+    background-color: #0059b2;
+    height: 1.5px;
+}
+
+.paragraphCaption {
+    position: absolute;
+    top: 190px;
+    left: 34px;
+    color: black;
+    font-size: 17px;
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    text-align: left;
+}
+
+.paragrLine {
+    position: absolute;
+    top: 240px;
+    left: 34px;
+    width: 30px;
+    background-color: #48cdff;
+    height: 1px;
+}
+
+.clear {
+    clear: both;
+}
+
+.firstSection .firstSectionWr{
+    padding: 0;
+}
+
+.firstSection .firstSectionWr > .row{
+    margin: 0;
+}
+
+.slider_wr {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    float: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.slides {
+    float: left;
+}
+
+.slider_move {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    display: none;
+    position: absolute;
+    top: calc(50% - 40px);
+    font-weight: bold;
+    color: #6d7a8c;
+    border: 1px solid #6d7a8c;
+    background-color: white;
+}
+
+.slider_left {
+    left: -70px;
+}
+
+.slider_right {
+    right: -70px;
+}
+
+.slide {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    float: left;
+    margin: 0 8px;
+}
+
+.slide .img_block{
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.slide .img_block img {
+    height: 100%;
+
+}
+
+.slide .img_block .category_name{
+    position: absolute;
+    bottom: 0;
+    background-color: #1052a8;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: white;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.slide a.article_header {
+    width: 100%;
+    display: block;
+    float: left;
+    padding: 10px;
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    font-size: 17px;
+    color: #130947;
+    transition: all 0.8s ease;
+}
+
+.slide a.article_header + hr {
+    width: 20%;
+    float: left;
+    height: 2px;
+    background-color: #48cdff;
+    margin-left: 10px;
+    transition: all 0.8s ease;
+}
+
+
+.slide a.article_header:hover {
+    color: #4c8ac9;
+    transition: all 0.8s ease;
+}
+
+.slide a.article_header:hover + hr{
+    width: 40%;
+    transition: all 0.8s ease;
+}
+
+/*Second section*/
+
+.secondSect {
+    width: calc(100% - 30px);
+    margin: auto;
+}
+
+.allExpertQuest {
+    background: url("../img/bg-color.jpeg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.expertQuest {
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 30px 0 15px;
+}
+
+.circle {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #48cdff;
+    border-radius: 18px;
+    text-align: center;
+    margin: 20px 10px 20px 20px;
+    padding-top: 4px;
+    font-size: 14px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: white;
+    transition: all 0.7s ease;
+}
+
+.standartQuest {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-top: 17px;
+}
+
+.hoverToQuest {
+    display: flex;
+}
+
+.hoverToQuest:hover .circle{
+    background-color: #48cdff;
+    transition: all 0.7s ease;
+}
+
+.hoverToQuest:hover .standartQuest{
+    color: #48cdff;
+    transition: all 0.7s ease;
+}
+
+.doctorOfScience {
+    margin: 20px auto 15px auto;
+    display: block;
+    text-align: center;
+}
+
+.nameOfDoctor {
+    font-family: 'Proxima Nova - Bold', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.levelOfScience {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: #48cdff;
+    text-align: center;
+}
+
+.questionForDoctor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    width: 191px;
+    height: 42px;
+    border: 1px solid #48cdff;
+    border-radius: 3px;
+    color: white;
+    transition: all 0.7s ease;
+    margin: 0 auto 20px;
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    font-size: 12px;
+}
+
+.questionForDoctor:hover {
+    background-color: #48cdff;
+    transition: all 0.7s ease;
+    text-decoration: none;
+    color: white;
+}
+
+/*Third Section*/
+
+.moreInfo {
+    background-color: white;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.infoAboutAll {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.biologicalProblems {
+    display: block;
+    text-align: center;
+    width: 62px;
+    height: 47px;
+}
+
+.nameOfProblem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    font-size: 16px;
+    color: #191919;
+    padding-top: 4px;
+    letter-spacing: 0.8px;
+}
+
+.lineResult {
+    display: block;
+    background-color: #ebe5e5;
+    height: 0.5px;
+    margin-bottom: 30px;
+}
+
+.circleNext {
+    display: flex;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #48cdff;
+    border-radius: 12px;
+    text-align: center;
+    margin: 7px 7px;
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #0059b2;
+    transition: all 0.7s ease;
+}
+
+.standartQuestNext {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #6d7a8c;
+    margin: 7px 10px;
+}
+
+.hoverToQuestNext {
+    display: flex;
+}
+
+.hoverToQuestNext:hover .circleNext{
+    border: 1.3px solid #1ca5ff;
+}
+
+.hoverToQuestNext:hover .standartQuestNext{
+    text-decoration: underline #b3e8fc;
+    color: #4c8ac9;
+    transition: all 0.7s ease;
+}
+
+/*Fifth Section*/
+
+/*Block with checking*/
+
+.moreInfoNext {
+    background-color: white;
+    margin: 15px 0;
+    padding: 10px 30px;
+}
+
+.doctorOnInterview {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    fill: #6d7a8c;
+}
+
+.interview {
+    font-family: 'Proxima Nova - Bold', Arial, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #0059b2;
+    margin-bottom: 20px;
+}
+
+.titleForFields {
+    text-align: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    color: #191919;
+}
+
+.chekingType {
+    display: flex;
+}
+
+.questionForChecking {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    color: #6d7a8c;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.checkspace {
+    margin-top: 2px;
+}
+
+.voting {
+    display: block;
+    margin: 28px auto;
+    width: 191px;
+    height: 42px;
+    border: 1px solid #48cdff;
+    border-radius: 1px;
+    background-color: white;
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    font-size: 12px;
+    color: #191919;
+    letter-spacing: 1.2px;
+    transition: all 0.6s ease;
+}
+
+.voting:hover {
+    background-color: #48cdff;
+    transition: all 0.6s ease;
+    color: white;
+}
+
+.checkspace {
+    display:none;
+}
+
+.checkspace + .label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid #aab9ce;
+    border-radius: 3px;
+    font-size: 10px;
+    line-height: 10px;
+    margin: 4px 10px 5px -2px;
+    height: 12px;
+    width: 12px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+}
+
+.checkspace:checked + .label:before{
+    color: #fff;
+    background-color: #48cdff;
+    border: none;
+}
+
+.checkspace:checked + .label{
+    font-style: italic;
+    color: #191919;
+}
+
+/*Comments Block*/
+
+.comments {
+    width: 41%;
+    height: 100%;
+    display: flex;
+    fill: #daf5ff;
+}
+
+.lastComments {
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0059b2;
+}
+
+.commentsNext {
+    font-family: "Proxima Nova - Bold", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    color: #0059b2;
+}
+
+.forComments {
+    display: flex;
+}
+
+.forSpansFlex {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 52px;
+    left: 99px;;
+}
+
+.moreInfoComments {
+    color: white;
+    background-color: white;
+    margin: 15px 0;
+    padding: 10px 25px 25px;
+}
+
+/*Block on Svetolina*/
+
+.notesIlona {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    color: #767572;
+}
+
+.ilSvetolina {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    color: #191919;
+    margin-bottom: 10px;
+}
+
+.linksOnSvetolina {
+    margin-bottom: 10px;
+}
+
+.linksOnSvetolina:hover .notesIlona{
+    color: #63a4e7;
+    text-decoration: underline #b3e8fc;
+}
+
+.linksOnSvetolina:hover .ilSvetolina{
+    color: #4c8ac9;
+    text-decoration: underline #b3e8fc;
+}
+
+/*Block with links*/
+
+.nameBlockLinks {
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    font-size: 16px;
+    color: #191919;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.linkline {
+    width: 40px;
+    background-color: #48cdff;
+    height: 1px;
+    display: inline-block;
+    text-align: left;
+    margin: 0 0 10px;
+}
+
+.arrow {
+    display: inline-block;
+    width: 12px;
+    height: 9px;
+    fill: #48cdff;
+}
+
+.blockLinks {
+    color: #6d7a8c;
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.blockLinks:hover {
+    color: #63a4e7;
+    text-decoration: underline #b3e8fc;
+}
+
+/*Sixth Section*/
+
+.forPortal {
+    margin: 15px 0;
+    padding: 10px 19px;
+}
+
+.nameOfPortal {
+    text-align: center;
+    font-family: "Proxima Nova - Reg", Arial, sans-serif;
+    font-size: 18px;
+    color: #130947;
+}
+
+.aboutPortal {
+    text-align: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #191919;
+}
+
+/*Seventh Section*/
+
+.seventhSect {
+    background-color: #003366;
+}
+
+.allRights {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 11px;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.socials {
+    background-color: #002b55;
+}
+
+.allWebs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerIcons {
+    width: 17px;
+    height: 17px;
+    margin: 30px 0;
+    fill: white;
+}
+
+.footerIcons:hover {
+    fill: #48cdff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

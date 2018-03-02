@@ -1,0 +1,9 @@
+@media (min-width:576px) {
+    .slider_move {
+        display: block;
+    }
+
+    .slider {
+        overflow-x: hidden;
+    }
+}
