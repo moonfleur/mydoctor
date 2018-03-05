@@ -159,7 +159,7 @@ body {
     text-align: center;
     margin-top: auto;
     padding: 10px 0;
-    padding: 17px 5px 6px;
+    padding: 17px 5px 11px;
     letter-spacing: 1px;
 }
 
@@ -836,10 +836,12 @@ body {
     height: 17px;
     margin: 30px 0;
     fill: white;
+    transition: all 0.4s ease;
 }
 
 .footerIcons:hover {
     fill: #48cdff;
+    transition: all 0.6s ease;
 }
 
 .footer_nav,
